@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bird_dragon",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "490871ef-56b2-4bc4-8fc9-335ff90ee108"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "9b7038dd-61da-46d8-a4a7-6d9ae0b093c1"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "fe2205cf-be0a-4651-8b5a-7bfc39539f3c"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

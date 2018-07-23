@@ -1,0 +1,395 @@
+2018-07-22T05:20:40.664Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-22T05:20:40.671Z - normal: checking language setting...
+2018-07-22T05:20:40.672Z - normal: Language: zh
+2018-07-22T05:20:44.173Z - success: protocol editor-framework registered
+2018-07-22T05:20:44.174Z - success: protocol app registered
+2018-07-22T05:20:44.174Z - success: protocol theme registered
+2018-07-22T05:20:44.174Z - success: protocol packages registered
+2018-07-22T05:20:44.174Z - success: protocol unpack registerred
+2018-07-22T05:20:44.174Z - success: protocol disable-commonjs registerred
+2018-07-22T05:20:44.284Z - normal: connected!
+2018-07-22T05:20:44.286Z - normal: Check project E:\Project\FlappyBird
+2018-07-22T05:20:44.288Z - normal: Initializing Cocos2d
+2018-07-22T05:20:44.532Z - normal: Initializing Asset Database
+2018-07-22T05:20:44.648Z - success: protocol uuid registerred
+2018-07-22T05:20:44.648Z - success: protocol db registerred
+2018-07-22T05:20:44.648Z - success: protocol thumbnail registerred
+2018-07-22T05:20:44.648Z - normal: Loading editor/builtin packages
+2018-07-22T05:20:44.694Z - success: anysdk loaded
+2018-07-22T05:20:44.845Z - success: assets loaded
+2018-07-22T05:20:44.848Z - success: builder loaded
+2018-07-22T05:20:44.851Z - success: cocos-analytics loaded
+2018-07-22T05:20:44.857Z - success: console loaded
+2018-07-22T05:20:44.928Z - success: fb-instant-games loaded
+2018-07-22T05:20:44.934Z - success: hierarchy loaded
+2018-07-22T05:20:44.937Z - success: inspector loaded
+2018-07-22T05:20:44.939Z - success: keystore loaded
+2018-07-22T05:20:44.944Z - success: node-library loaded
+2018-07-22T05:20:44.946Z - success: package-asset loaded
+2018-07-22T05:20:44.949Z - success: preferences loaded
+2018-07-22T05:20:44.952Z - success: project-exporter loaded
+2018-07-22T05:20:44.974Z - success: project-importer loaded
+2018-07-22T05:20:44.976Z - success: project-settings loaded
+2018-07-22T05:20:44.980Z - success: ui-kit loaded
+2018-07-22T05:20:44.996Z - success: ui-grid loaded
+2018-07-22T05:20:45.002Z - success: scene loaded
+2018-07-22T05:20:45.004Z - success: sprite-editor loaded
+2018-07-22T05:20:45.007Z - success: store loaded
+2018-07-22T05:20:45.015Z - success: timeline loaded
+2018-07-22T05:20:45.015Z - normal: Loading builtin packages
+2018-07-22T05:20:45.023Z - success: asset-db-debugger loaded
+2018-07-22T05:20:45.042Z - success: code-editor loaded
+2018-07-22T05:20:45.043Z - success: color-picker loaded
+2018-07-22T05:20:45.047Z - success: package-manager loaded
+2018-07-22T05:20:45.050Z - success: qqplay-adapter loaded
+2018-07-22T05:20:45.054Z - success: sdkbox loaded
+2018-07-22T05:20:45.058Z - success: tester loaded
+2018-07-22T05:20:45.063Z - success: ui-kit-preview-extra loaded
+2018-07-22T05:20:45.068Z - success: ui-kit-preview loaded
+2018-07-22T05:20:45.071Z - success: ui-tree loaded
+2018-07-22T05:20:45.072Z - success: weapp-adapter loaded
+2018-07-22T05:20:46.499Z - normal: Initializing project E:\Project\FlappyBird
+2018-07-22T05:20:46.516Z - normal: Loading packages
+2018-07-22T05:20:46.523Z - normal: Watching packages
+2018-07-22T05:20:47.252Z - normal: Run Application
+2018-07-22T05:20:49.171Z - success: preview server running at http://localhost:7456
+2018-07-22T05:20:58.761Z - normal: 1.9.3
+2018-07-22T05:26:28.255Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:26:38.094Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:29:39.723Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:29:45.801Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:37:43.603Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:38:47.062Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:39:32.314Z - warn: The Node referenced by component "Main" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T05:39:49.124Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:17998
+2018-07-22T06:02:00.442Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Texture/land.png.meta
+2018-07-22T06:02:55.719Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33402
+2018-07-22T06:02:55.720Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33404
+2018-07-22T06:02:55.720Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33405
+2018-07-22T06:02:55.721Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33406
+2018-07-22T06:02:55.721Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33407
+2018-07-22T06:02:55.722Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33408
+2018-07-22T06:02:55.722Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33409
+2018-07-22T06:02:55.723Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33410
+2018-07-22T06:02:55.723Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33411
+2018-07-22T06:02:55.723Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:33412
+2018-07-22T06:04:13.709Z - warn: The Node referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T06:04:25.800Z - warn: The Node referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T06:04:27.461Z - warn: The Asset used by component "cc.Sprite" in scene "game1.fire" is missing. Detailed information:
+Node path: "Canvas/land"
+Asset url: "db://assets/game1.fire"
+Missing uuid: "759e449e-3f16-4c6a-9e2a-e062270f0afe"
+
+2018-07-22T06:05:12.406Z - warn: The Node referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T06:05:18.075Z - warn: The Node referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2018-07-22T06:07:50.654Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:38252
+2018-07-22T06:11:19.314Z - warn: TypeError: Cannot read property '_uuid' of null
+2018-07-22T06:11:53.403Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43034
+2018-07-22T06:13:50.143Z - warn: The Asset used by component "cc.Sprite" in scene "start.fire" is missing. Detailed information:
+Node path: "Canvas/land"
+Asset url: "db://assets/start.fire"
+Missing uuid: "759e449e-3f16-4c6a-9e2a-e062270f0afe"
+
+2018-07-22T06:13:50.146Z - warn: The Asset used by component "cc.Animation" in scene "start.fire" is missing. Detailed information:
+Node path: "Canvas/land"
+Asset url: "db://assets/start.fire"
+Missing uuid: "ea3635ad-88be-4521-a743-d5ba1bbf2f73"
+
+2018-07-22T06:21:53.572Z - normal: Introduced global variable while editing: i
+2018-07-22T06:21:53.576Z - normal: Introduced global variable while editing: l
+2018-07-22T06:46:11.103Z - warn: Can not select this node in Animation Edit Mode
+2018-07-22T06:52:41.744Z - warn: Can not select this node in Animation Edit Mode
+2018-07-22T07:03:21.878Z - normal: Introduced global variable while editing: i
+2018-07-22T07:03:21.883Z - normal: Introduced global variable while editing: l
+2018-07-22T07:21:43.188Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\Project\\FlappyBird\\build",
+  "debug": false,
+  "dest": "E:\\Project\\FlappyBird\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+    "730d24ff-087f-4f20-8a1d-50e1cc7a3c83",
+    "45d1a719-5b21-4427-8104-0db3875a70be",
+    "83aee280-3a30-44a4-bd22-0f1e0bfce180",
+    "3849ed22-f77b-4186-a19c-b2b5f4c14feb"
+  ],
+  "sourceMaps": false,
+  "startScene": "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "4353cb2e-7cd0-42",
+  "zipCompressJs": true,
+  "project": "E:\\Project\\FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-07-22T07:21:43.205Z - normal: Building E:\Project\FlappyBird
+2018-07-22T07:21:43.206Z - normal: Destination E:\Project\FlappyBird\build\wechatgame
+2018-07-22T07:21:45.459Z - normal: Delete E:\Project\FlappyBird\build\wechatgame\**\*
+2018-07-22T07:21:57.163Z - normal: Compiled project javascript file successfully
+2018-07-22T07:21:57.164Z - normal: Start building assets
+2018-07-22T07:21:57.165Z - normal: Start spawn build-worker
+2018-07-22T07:21:58.189Z - normal: Finish spawn build-worker
+2018-07-22T07:21:58.189Z - normal: Start init build-worker
+2018-07-22T07:22:01.034Z - normal: 1.9.3
+2018-07-22T07:22:01.292Z - normal: Finish init build-worker
+2018-07-22T07:22:01.292Z - normal: Start build-assets in worker
+2018-07-22T07:22:02.585Z - normal: Finish build-assets in worker
+2018-07-22T07:22:02.597Z - normal: Finish building assets
+2018-07-22T07:22:02.625Z - normal: Start building raw assets
+2018-07-22T07:22:02.627Z - normal: Start building plugin scripts
+2018-07-22T07:22:03.023Z - normal: Finish building raw assets
+2018-07-22T07:22:03.098Z - normal: Generating main.js from E:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-07-22T07:22:05.382Z - normal: Built to "E:\Project\FlappyBird\build\wechatgame" successfully
+2018-07-22T07:22:18.784Z - error: 请在 [偏好设置 -> 原生开发环境] 中设置微信开发者工具路径。
+    at Object.run (E:\CocosCreator\resources\app.asar\editor\core\wechat-game.js:1:387)
+    at EventEmitter.ipcMain.on (E:\CocosCreator\resources\app.asar\editor\core\ipc\app-ipc.js:1:1115)
+    at emitTwo (events.js:106:13)
+    at EventEmitter.emit (events.js:194:7)
+    at WebContents.<anonymous> (E:\CocosCreator\resources\electron.asar\browser\api\web-contents.js:247:13)
+    at emitTwo (events.js:106:13)
+    at WebContents.emit (events.js:194:7)
+2018-07-22T07:27:08.746Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\Project\\FlappyBird\\build",
+  "debug": false,
+  "dest": "E:\\Project\\FlappyBird\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+    "730d24ff-087f-4f20-8a1d-50e1cc7a3c83",
+    "45d1a719-5b21-4427-8104-0db3875a70be",
+    "83aee280-3a30-44a4-bd22-0f1e0bfce180",
+    "3849ed22-f77b-4186-a19c-b2b5f4c14feb"
+  ],
+  "sourceMaps": false,
+  "startScene": "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "4353cb2e-7cd0-42",
+  "zipCompressJs": true,
+  "project": "E:\\Project\\FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-07-22T07:27:08.759Z - normal: Building E:\Project\FlappyBird
+2018-07-22T07:27:08.760Z - normal: Destination E:\Project\FlappyBird\build\wechatgame
+2018-07-22T07:27:08.763Z - normal: Delete E:\Project\FlappyBird\build\wechatgame\**\*
+2018-07-22T07:27:11.358Z - normal: Compiled project javascript file successfully
+2018-07-22T07:27:11.359Z - normal: Start building assets
+2018-07-22T07:27:11.359Z - normal: Start spawn build-worker
+2018-07-22T07:27:12.518Z - normal: Finish spawn build-worker
+2018-07-22T07:27:12.518Z - normal: Start init build-worker
+2018-07-22T07:27:15.417Z - normal: 1.9.3
+2018-07-22T07:27:15.492Z - normal: Finish init build-worker
+2018-07-22T07:27:15.492Z - normal: Start build-assets in worker
+2018-07-22T07:27:16.233Z - normal: Finish build-assets in worker
+2018-07-22T07:27:16.244Z - normal: Finish building assets
+2018-07-22T07:27:16.270Z - normal: Start building raw assets
+2018-07-22T07:27:16.271Z - normal: Start building plugin scripts
+2018-07-22T07:27:16.320Z - normal: Finish building raw assets
+2018-07-22T07:27:16.327Z - normal: Generating main.js from E:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-07-22T07:27:17.658Z - normal: Built to "E:\Project\FlappyBird\build\wechatgame" successfully
+2018-07-22T07:27:49.596Z - error: 请在 [偏好设置 -> 原生开发环境] 中设置微信开发者工具路径。
+    at Object.run (E:\CocosCreator\resources\app.asar\editor\core\wechat-game.js:1:387)
+    at EventEmitter.ipcMain.on (E:\CocosCreator\resources\app.asar\editor\core\ipc\app-ipc.js:1:1115)
+    at emitTwo (events.js:106:13)
+    at EventEmitter.emit (events.js:194:7)
+    at WebContents.<anonymous> (E:\CocosCreator\resources\electron.asar\browser\api\web-contents.js:247:13)
+    at emitTwo (events.js:106:13)
+    at WebContents.emit (events.js:194:7)
+2018-07-22T07:37:39.273Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\Project\\FlappyBird\\build",
+  "debug": false,
+  "dest": "E:\\Project\\FlappyBird\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+    "730d24ff-087f-4f20-8a1d-50e1cc7a3c83",
+    "45d1a719-5b21-4427-8104-0db3875a70be",
+    "83aee280-3a30-44a4-bd22-0f1e0bfce180",
+    "3849ed22-f77b-4186-a19c-b2b5f4c14feb"
+  ],
+  "sourceMaps": false,
+  "startScene": "57cb2c2b-7119-47b9-a4fe-7a3702f4eac7",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "4353cb2e-7cd0-42",
+  "zipCompressJs": true,
+  "project": "E:\\Project\\FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-07-22T07:37:39.283Z - normal: Building E:\Project\FlappyBird
+2018-07-22T07:37:39.283Z - normal: Destination E:\Project\FlappyBird\build\wechatgame
+2018-07-22T07:37:39.284Z - normal: Delete E:\Project\FlappyBird\build\wechatgame\**\*
+2018-07-22T07:37:47.232Z - normal: Compiled project javascript file successfully
+2018-07-22T07:37:47.233Z - normal: Start building assets
+2018-07-22T07:37:47.233Z - normal: Start spawn build-worker
+2018-07-22T07:37:48.325Z - normal: Finish spawn build-worker
+2018-07-22T07:37:48.325Z - normal: Start init build-worker
+2018-07-22T07:37:53.161Z - normal: 1.9.3
+2018-07-22T07:37:53.446Z - normal: Finish init build-worker
+2018-07-22T07:37:53.446Z - normal: Start build-assets in worker
+2018-07-22T07:37:56.319Z - normal: Finish build-assets in worker
+2018-07-22T07:37:56.345Z - normal: Finish building assets
+2018-07-22T07:37:56.376Z - normal: Start building raw assets
+2018-07-22T07:37:56.378Z - normal: Start building plugin scripts
+2018-07-22T07:37:56.432Z - normal: Finish building raw assets
+2018-07-22T07:37:56.451Z - normal: Generating main.js from E:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-07-22T07:37:58.986Z - normal: Built to "E:\Project\FlappyBird\build\wechatgame" successfully
+2018-07-22T07:41:37.782Z - warn: Can not select this node in Animation Edit Mode
+2018-07-22T07:55:49.328Z - info: shutdown preview server

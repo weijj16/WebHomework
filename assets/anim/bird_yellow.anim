@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bird_yellow",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "3c25ddf1-510b-4de7-989d-9c56ae674896"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "c34f484a-54ae-47ab-bf52-5720e4db0c64"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "a570c93e-1aa0-41fa-9aae-3a6d7227bb0e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

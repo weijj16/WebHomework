@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pen_down",
+    "texture": "480700ca-8204-4350-bd36-18d026c55d54",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      48,
+      420
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      52,
+      420
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bird5-2",
+    "texture": "e19992a7-8b04-4fbd-9b54-af44e08e7d24",
+    "atlas": "",
+    "rect": [
+      13,
+      23,
+      258,
+      243
+    ],
+    "offset": [
+      -2,
+      -0.5
+    ],
+    "originalSize": [
+      288,
+      288
+    ]
+  }
+}

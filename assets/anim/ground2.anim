@@ -1,0 +1,36 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ground2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.6,
+  "sample": 50,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": []
+      }
+    },
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -130,
+            -220
+          ]
+        },
+        {
+          "frame": 0.6,
+          "value": [
+            0,
+            -220
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

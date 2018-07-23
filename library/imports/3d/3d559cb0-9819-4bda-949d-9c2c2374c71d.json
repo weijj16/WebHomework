@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pen_up",
+    "texture": "a1078015-c5bb-486c-8555-905933a004a8",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      48,
+      420
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      52,
+      420
+    ]
+  }
+}

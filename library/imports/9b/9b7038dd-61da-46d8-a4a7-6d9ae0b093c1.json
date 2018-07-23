@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dragon_2",
+    "texture": "ab90e9b0-fad9-45b7-b61c-d1199e14fa55",
+    "atlas": "",
+    "rect": [
+      10,
+      28,
+      66,
+      35
+    ],
+    "offset": [
+      3,
+      -5.5
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

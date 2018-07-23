@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bird_monster",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "572489fb-dea9-43d8-8202-b0b7247f7682"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "7c479440-e050-47a6-8103-9e673320b0c8"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "0cd9470e-d832-4dc9-a095-2b4213aa2f3e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

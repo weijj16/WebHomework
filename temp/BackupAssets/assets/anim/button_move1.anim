@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "button_move1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": -300
+        },
+        {
+          "frame": 0.5,
+          "value": 0
+        }
+      ]
+    },
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "13013d43-ac70-494e-a40d-cf1a12daa6cb"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
