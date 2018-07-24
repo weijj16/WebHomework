@@ -61,31 +61,24 @@ var Audio = function (_HTMLAudioElement) {
       _this.readyState = HAVE_CURRENT_DATA;
     });
     innerAudioContext.onPlay(function () {
-      _this._paused = _innerAudioContext.get(_this).paused;
       _this.dispatchEvent({ type: 'play' });
     });
     innerAudioContext.onPause(function () {
-      _this._paused = _innerAudioContext.get(_this).paused;
       _this.dispatchEvent({ type: 'pause' });
     });
     innerAudioContext.onEnded(function () {
-      _this._paused = _innerAudioContext.get(_this).paused;
       if (_innerAudioContext.get(_this).loop === false) {
         _this.dispatchEvent({ type: 'ended' });
       }
       _this.readyState = HAVE_ENOUGH_DATA;
     });
     innerAudioContext.onError(function () {
-      _this._paused = _innerAudioContext.get(_this).paused;
       _this.dispatchEvent({ type: 'error' });
     });
 
     if (url) {
       _innerAudioContext.get(_this).src = url;
     }
-    _this._paused = innerAudioContext.paused;
-    _this._volume = innerAudioContext.volume;
-    _this._muted = false;
     return _this;
   }
 
@@ -173,31 +166,15 @@ var Audio = function (_HTMLAudioElement) {
   }, {
     key: 'paused',
     get: function get() {
-      return this._paused;
+      return _innerAudioContext.get(this).paused;
     }
   }, {
     key: 'volume',
     get: function get() {
-      return this._volume;
+      return _innerAudioContext.get(this).volume;
     },
     set: function set(value) {
-      this._volume = value;
-      if (!this._muted) {
-        _innerAudioContext.get(this).volume = value;
-      }
-    }
-  }, {
-    key: 'muted',
-    get: function get() {
-      return this._muted;
-    },
-    set: function set(value) {
-      this._muted = value;
-      if (value) {
-        _innerAudioContext.get(this).volume = 0;
-      } else {
-        _innerAudioContext.get(this).volume = this._volume;
-      }
+      _innerAudioContext.get(this).volume = value;
     }
   }]);
 

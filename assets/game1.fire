@@ -317,10 +317,10 @@
         "__uuid__": "3165684d-64d6-4267-ac2a-fc2d34f15340"
       },
       {
-        "__uuid__": "857ade3b-26ce-4641-9181-dfa69d05a373"
+        "__uuid__": "4fb64ffe-0a7b-43e6-98db-7c69f45e17b3"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "e47c6UbGPJF77OxmgwgJMbA",

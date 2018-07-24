@@ -56,8 +56,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 109.6,
+      "y": -58.7
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -112,13 +112,13 @@
     "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.5,
+      "y": -1.4
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 52,
-      "height": 320
+      "width": 48,
+      "height": 318.5
     }
   },
   {

@@ -173,12 +173,36 @@ cc.Class({
         cc.director.preloadScene('start');
 
         //获取主角的动画对象
+        
+        let portrar = cc.sys.localStorage.getItem('portrartNum');
+        portrar ? portrar : portrar = 0;
+     
+             //获取主角的动画对象
         var birdAnim = this.bird.getComponent(cc.Animation);
-
-
-        birdAnim.play('bird_blue');
-
-
+     
+             //根据获取到的主角编号执行对应的动画
+        switch (portrar) {
+            case '1':
+                birdAnim.play('bird_blue');
+                break;
+            case '2':
+                birdAnim.play('bird_red');
+                break;
+            case '3':
+                birdAnim.play('bird_yellow');
+                break;
+            case '4':
+                birdAnim.play('bird_new');
+                break;
+            case '5':
+                birdAnim.play('bird_dragon');
+                break;
+            default:
+                birdAnim.play('bird_monster');
+                break;
+        }
+            
+        
         this.againBtn.on('touchstart', function () {
             //重新开始游戏
             this.mapNum = cc.sys.localStorage.getItem("mapNum")
@@ -209,8 +233,11 @@ cc.Class({
         this.Score.opacity = 0;
         //计算本次结束的金钱数量
         this.money = Math.floor(this.score / 10);
-
         money ? money += this.money : money = this.money;
+        //获取排行榜的数组
+        var arr = cc.sys.localStorage.getItem('arr');
+        arr ? arr = arr.split(','):arr = [];
+
         bestScore = bestScore || 0;
         //停止定时器
         this.unschedule(this.spawnNewPipe, this);
@@ -234,8 +261,27 @@ cc.Class({
         againAnim.play('button_move3');
         menuAnim.play('button_move2');
 
+        for (var i = 0; i < 5; i++) {
+            arr[i] = arr[i] || 0;
+
+            //判断当前分数是否大于排行榜里的任意值
+            if (this.score > arr[i]) {
+
+                arr.splice(i, 0, this.score);
+
+                //判断数组的长度大于5就删除数组的最后一位
+                if (arr.length > 5) {
+                    arr.pop();
+                }
+                break;
+            }
+        }
+        
+
         //储存金钱数量
         cc.sys.localStorage.setItem('money', Math.floor(money));
+        //储存排行榜数量
+        cc.sys.localStorage.setItem('arr', arr.toString());
 
         if (bestScore) {
             //判断当前分数是否大于最高分

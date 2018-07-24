@@ -20,10 +20,7 @@ var screen = exports.screen = {
   availLeft: 0,
   availTop: 0
 };
-
-var performance = wx.getPerformance ? wx.getPerformance() : {};
-performance.now = Date.now;
-
+var performance = exports.performance = wx.getPerformance ? wx.getPerformance() : null;
 var ontouchstart = exports.ontouchstart = null;
 var ontouchmove = exports.ontouchmove = null;
 var ontouchend = exports.ontouchend = null;
