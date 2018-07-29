@@ -3,8 +3,8 @@
   "_name": "ground1",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.5,
-  "sample": 20,
+  "_duration": 0.6,
+  "sample": 50,
   "speed": 1,
   "wrapMode": "2",
   "curveData": {
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "frame": 1.5,
+          "frame": 0.6,
           "value": [
             0,
             -220

@@ -25,12 +25,26 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
-
         pipeDown: {
             default: null,
             type: cc.Prefab
         },
-
+        dieAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        pressAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        backgroundAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        readygoAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
         //小鸟对象
         bird: {
             default: null,
@@ -42,7 +56,6 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-
         //管道数组
         pipePrefabs: {
             default: [],
@@ -128,10 +141,8 @@ cc.Class({
     setPipePosition: function setPipePosition(dire, randY) {
         var PosX = 0;
         var PosY = 0;
-
         //随机生成上下管道的间距
         var pipeInterval = cc.random0To1() * (this.pipeMaxInterval - this.pipeMinInterval) + this.pipeMinInterval;
-
         if (dire) {
             //下边的管道
             PosY = -randY;
@@ -139,31 +150,28 @@ cc.Class({
             //上边的管道
             PosY = this.pipeHeight - randY + pipeInterval;
         }
-
         PosX = this.pipeDistance + this.sceneWidth;
 
         return cc.p(PosX, PosY);
     },
 
+    play: function play() {
+        this.backgroundAudio.play();
+    },
+
     // use this for initialization
     onLoad: function onLoad() {
-
         var self = this;
 
         self.Score.opacity = 200;
-        //管道的高度
         this.pipeHeight = this.pipeUp.data.height;
-        //获取管道的宽度
         this.pipeWidth = this.pipeUp.data.width;
-        //获取屏幕一半的宽度
         this.sceneWidth = this.node.width / 2;
-        //获取屏幕一半的高度
         this.sceneHeight = this.node.height / 2;
-        //管道的对数
+        //管道初始化
         this.pipCount = 0;
-        //数组初始化
         this.pipes = [];
-        //小鸟的高度
+
         this.birdHeight = this.bird.node.height;
         //分数
         this.score = 0;
@@ -172,59 +180,45 @@ cc.Class({
         this.money = 0;
         //判断是否结束
         this.over = false;
-        //预加载返回到开始界面的场景
+        //预加载
         cc.director.preloadScene('start');
 
-        //获取主角的动画对象
-
-        var portrar = cc.sys.localStorage.getItem('portrartNum');
-        portrar ? portrar : portrar = 0;
-
+        cc.audioEngine.play(self.readygoAudio, false, 1);
         //获取主角的动画对象
         var birdAnim = this.bird.getComponent(cc.Animation);
-
-        //根据获取到的主角编号执行对应的动画
-        switch (portrar) {
-            case '1':
-                birdAnim.play('bird_blue');
-                break;
-            case '2':
-                birdAnim.play('bird_red');
-                break;
-            case '3':
-                birdAnim.play('bird_yellow');
-                break;
-            case '4':
-                birdAnim.play('bird_new');
-                break;
-            case '5':
-                birdAnim.play('bird_dragon');
-                break;
-            default:
-                birdAnim.play('bird_monster');
-                break;
-        }
+        birdAnim.play('bird_blue');
+        //cc.audioEngine.stop(self.readygoAudio);
+        var id1 = cc.audioEngine.play(self.backgroundAudio, true, 1);
 
         this.againBtn.on('touchstart', function () {
             //重新开始游戏
+            cc.audioEngine.play(self.pressAudio, false, 1);
+            cc.audioEngine.pause(id1);
+            //this.backgroundAudio.play();
             this.mapNum = cc.sys.localStorage.getItem("mapNum");
-            if (this.mapNum == 1) cc.director.loadScene('game1');else if (this.mapNum == 2) cc.director.loadScene('game2');
+            if (this.mapNum == 1) {
+                cc.director.loadScene('game1');
+            } else if (this.mapNum == 2) {
+                cc.director.loadScene('game2');
+            }
+            //cc.audioEngine.play(self.backgroundAudio, true, 1 );   
         });
 
         this.menuBtn.on('touchstart', function () {
             //返回主界面
+            cc.audioEngine.pause(id1);
+            cc.audioEngine.play(self.pressAudio, false, 1);
+
             cc.director.loadScene('start');
         });
-
         //定时生成管道
         this.schedule(this.spawnNewPipe, 3);
     },
 
     gameOver: function gameOver() {
 
-        //获取以前的金钱数量
+        //cc.audioEngine.pause(this.backgroundAudio); 
         var money = parseInt(cc.sys.localStorage.getItem('money'));
-        //获取最高分
         var bestScore = cc.sys.localStorage.getItem('bestScore');
         this.Score.opacity = 0;
         //计算本次结束的金钱数量
@@ -239,13 +233,12 @@ cc.Class({
         this.unschedule(this.spawnNewPipe, this);
         //初始化数组
         this.pipes = [];
+
         //取消事件绑定
         cc.eventManager.removeListener(this.bird.touchListener);
-        //显示分数
+
         this.scoreBoard.string = this.score;
-        //显示金币数
         this.moneyScore.string = this.money;
-        //显示最高分
         this.bestScore.string = bestScore;
 
         //播放动画事件
@@ -257,15 +250,11 @@ cc.Class({
         againAnim.play('button_move3');
         menuAnim.play('button_move2');
 
+        //排行榜
         for (var i = 0; i < 5; i++) {
             arr[i] = arr[i] || 0;
-
-            //判断当前分数是否大于排行榜里的任意值
             if (this.score > arr[i]) {
-
                 arr.splice(i, 0, this.score);
-
-                //判断数组的长度大于5就删除数组的最后一位
                 if (arr.length > 5) {
                     arr.pop();
                 }
@@ -273,15 +262,13 @@ cc.Class({
             }
         }
 
-        //储存金钱数量
+        //本地储存
         cc.sys.localStorage.setItem('money', Math.floor(money));
-        //储存排行榜数量
         cc.sys.localStorage.setItem('arr', arr.toString());
-
         if (bestScore) {
             //判断当前分数是否大于最高分
             if (bestScore < this.score) {
-                //存储最高分数
+                //存储
                 cc.sys.localStorage.setItem('bestScore', this.score);
             }
         } else {
@@ -289,41 +276,35 @@ cc.Class({
         }
     },
 
-    // called every frame, uncomment this function to activate update callback
     update: function update(dt) {
 
         for (var index = 0; index < this.pipes.length; index++) {
             this.pipes[index].x -= 1;
-
-            //超出屏幕范围清除元素
+            //清除元素
             if (this.pipes[index].x < -(this.pipeWidth + this.sceneWidth)) {
                 this.node.removeChild(this.pipes[index]);
                 this.pipes.shift();
             }
-
-            //判断小鸟是否穿过管道
-            if (this.bird.node.x > this.pipes[index].x && this.pipes[index].mark) {
-                this.pipes[index].mark = false;
-                this.gainScore();
-            }
-
             //判断小鸟是否碰撞到管道上
             if (this.bird.collision) {
                 this.over = true;
                 this.gameOver();
             }
+            //判断小鸟是否穿过管道
+            if (this.bird.node.x > this.pipes[index].x && this.pipes[index].mark) {
+                this.pipes[index].mark = false;
+                this.gainScore();
+            }
         }
-
         //判断小鸟是否超出屏幕以及接触地面
         if ((this.bird.node.y > this.sceneHeight || this.bird.node.y < this.ground.y) && !this.over) {
             this.over = true;
+            cc.audioEngine.play(this.dieAudio, false, 1);
             this.gameOver();
         }
     },
     gainScore: function gainScore() {
-
         this.score += 1;
-
         this.ScoreLabel.string = 'score: ' + this.score.toString();
     }
 });

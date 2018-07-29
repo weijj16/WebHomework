@@ -1704,6 +1704,12 @@
       "__id__": 2
     },
     "_enabled": true,
+    "pressAudio": {
+      "__uuid__": "f360a2b0-e760-4916-88e8-aff697eaf02d"
+    },
+    "startAudio": {
+      "__uuid__": "10ff5222-42fe-43e4-a494-2168f87aa17b"
+    },
     "Map1Btn": {
       "__id__": 7
     },

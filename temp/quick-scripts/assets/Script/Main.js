@@ -19,6 +19,14 @@ cc.Class({
 
     properties: {
         //开始按钮对象
+        pressAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        startAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
         Map1Btn: {
             default: null,
             type: cc.Node
@@ -65,26 +73,22 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-
+        //this.startAudio.play();
         var self = this;
-
         //预加载game游戏场景
         cc.director.preloadScene('game1');
         cc.director.preloadScene('game2');
-        //加载birdChoose场景
-        cc.director.preloadScene('birdChoose');
+        var id = cc.audioEngine.play(self.startAudio, true, 1);
         //绑定开始事件，跳转到游戏界面
         this.Map1Btn.on('touchstart', function () {
-            //跳转到选鸟界面
-            cc.director.loadScene('birdChoose');
-            //跳转到game游戏场景
+            cc.audioEngine.pause(id);
+            cc.audioEngine.play(self.pressAudio, false, 1);
             cc.director.loadScene('game1');
             cc.sys.localStorage.setItem('mapNum', 1);
         });
         this.Map2Btn.on('touchstart', function () {
-            //跳转到选鸟界面
-            cc.director.loadScene('birdChoose');
-            //跳转到game游戏场景
+            cc.audioEngine.pause(id);
+            cc.audioEngine.play(self.pressAudio, false, 1);
             cc.director.loadScene('game2');
             cc.sys.localStorage.setItem('mapNum', 2);
         });
@@ -93,6 +97,7 @@ cc.Class({
         this.rank_anim = r.rank.getComponent(cc.Animation);
         this.RankBtn.on('touchstart', function () {
             //显示排行榜
+            cc.audioEngine.play(self.pressAudio, false, 1);
             r.rank_anim.play('rank_open');
 
             r.RankBtn.pauseSystemEvents(true);
@@ -121,6 +126,7 @@ cc.Class({
         this.intro_anim = i.intro.getComponent(cc.Animation);
         this.IntroBtn.on('touchstart', function () {
             //显示指导界面
+            cc.audioEngine.play(self.pressAudio, false, 1);
             i.intro_anim.play('intro_open');
             i.IntroBtn.pauseSystemEvents(true);
             i.RankBtn.pauseSystemEvents(true);
@@ -135,12 +141,8 @@ cc.Class({
             i.Map1Btn.resumeSystemEvents(true);
             i.Map2Btn.resumeSystemEvents(true);
         });
+        //this.startAudio.pause();
     }
-
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
 });
 
 cc._RF.pop();

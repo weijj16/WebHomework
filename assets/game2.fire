@@ -303,21 +303,6 @@
     "_clips": [
       {
         "__uuid__": "d4e16241-60da-429a-8eef-270d44103c3a"
-      },
-      {
-        "__uuid__": "031a4c08-2b68-4b61-a4cc-5de8e99a8bc1"
-      },
-      {
-        "__uuid__": "c938c7ca-1450-44ae-ace0-1d32a5981480"
-      },
-      {
-        "__uuid__": "2cbb3bc2-4c44-4cec-82e5-55d5efb01b63"
-      },
-      {
-        "__uuid__": "3165684d-64d6-4267-ac2a-fc2d34f15340"
-      },
-      {
-        "__uuid__": "4fb64ffe-0a7b-43e6-98db-7c69f45e17b3"
       }
     ],
     "playOnLoad": true
@@ -330,9 +315,15 @@
       "__id__": 5
     },
     "_enabled": true,
+    "WingAudio": {
+      "__uuid__": "0d139bfa-cf69-409d-acf1-54cfe90fb9a0"
+    },
+    "hitAudio": {
+      "__uuid__": "0b4cb7d2-a33a-4815-992d-0e87bf7a95e1"
+    },
     "gravity": 5,
-    "flySpeed": 2,
-    "power": 5
+    "x_speed": 2,
+    "y_speed": 5
   },
   {
     "__type__": "cc.BoxCollider",
@@ -1597,6 +1588,18 @@
     },
     "pipeDown": {
       "__uuid__": "37754bde-dfe4-4047-a66c-aee9041f610c"
+    },
+    "dieAudio": {
+      "__uuid__": "225b5a25-951c-4288-a7d0-d8bd9a564a91"
+    },
+    "pressAudio": {
+      "__uuid__": "f360a2b0-e760-4916-88e8-aff697eaf02d"
+    },
+    "backgroundAudio": {
+      "__uuid__": "306e2dd6-0f3d-4f13-8a45-9e0254594249"
+    },
+    "readygoAudio": {
+      "__uuid__": "4fb982c9-4e76-4772-99da-0a0c970c0b29"
     },
     "bird": {
       "__id__": 8
